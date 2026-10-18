@@ -336,6 +336,7 @@ h2{
 #addToCartBtn{
     margin:8%;
     background-color: hsl(26, 100%, 55%);
+    border: none;
     width: 70%;
     padding: 2%;
     border-radius: 10px;
