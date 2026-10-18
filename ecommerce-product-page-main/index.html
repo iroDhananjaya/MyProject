@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="index.css">
+    
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution { font-size: 0.6875rem; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+  </head>
+  <body>
+
+    <div id="headDiv">
+
+      <div id="headRibbonButtons">
+          <button id="menuButton"><img src="./images/icon-menu.svg"></button>
+          <button id="mainImgPrev"><img src="./images/icon-previous.svg" alt="previous image" width="30%" height="30%"></button>
+          <button id="mainImgNext"><img src="./images/icon-next.svg" alt="next image" width="30%" height="30%"></button>
+        
+          <img src="./images/logo.svg" alt="sneaker logo" id="sneakerLogo">
+        <div id="settingButtons">
+          <div id="collection" class="menuButtons">Collection</div>
+          <div id="men" class="menuButtons">Men</div>
+          <div id="women" class="menuButtons">Women</div>
+          <div id="about" class="menuButtons">About</div>
+          <div id="contact" class="menuButtons">Contact</div>
+        </div>
+        
+      </div>
+
+      <div id="headRibbonCart">
+        <button id="cartBtn"><img src="./images/icon-cart.svg" alt="cart logo"></button>
+        <img src="./images/image-avatar.png" alt="avatar logo" id="avatarLogo">
+        <div id="cartPanel">
+          <h3 id="cartTitle">Cart</h3>
+          <hr>
+          <div id="cartPanelContent">
+            <p id="cartContent">Your cart is empty.</p>
+            <div id="cartObject">
+              <div id="cartObject1">
+                <img src="./images/image-product-1.jpg" alt="sneakerImg" width="20%" height="20%" style="border-radius: 25px; padding: 2%;">
+                <p id="cartObject1Name">Fall Limited Edition Sneakers<br>
+                  $125.00 X <span id="itemCount"></span> <span id="totalPrice">0</span></p>
+                <button id="deleteBtn"><img src="images/icon-delete.svg"></button>
+              </div>
+              <button id="checkoutBtn">Checkout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <div id="bodyDiv">
+
+      <div id="sneakerImageDiv">
+        <button id="mainSneakerImageBtn">
+          <img src="./images/image-product-1.jpg" alt="sneaker image" id="mainsneakerImage">
+        </button>
+        <div id="selectionImages">
+          <button id="thumbnail1"><img src="./images/image-product-1-thumbnail.jpg"  class="thumbnails"></button>
+          <button id="thumbnail2"><img src="./images/image-product-2-thumbnail.jpg"  class="thumbnails"></button>
+          <button id="thumbnail3"><img src="./images/image-product-3-thumbnail.jpg"  class="thumbnails"></button>
+          <button id="thumbnail4"><img src="./images/image-product-4-thumbnail.jpg"  class="thumbnails"></button>
+        </div>
+      </div>
+
+      <div id="description">
+        <p id="companyName" class="descriptionPara">SNEAKER COMPANY</p>
+        <h2>Fall Limited Edition Sneakers</h2>
+        <p class="descriptionPara">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+            durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+        <p id="prices"><span id="currentPrice">$125.00</span><span id="discount">50%</span><br>
+          <span id="originalPrice"><del>$250.00</del></span>
+        </p>
+        <div id="orderCountButtons">
+          <div id="addSubBtns">
+            <div id="minus"><img src="./images/icon-minus.svg" id="minusImg"></div>
+            <div id="count">1</div>
+            <div id="plus"><img src="./images/icon-plus.svg"></div>
+          </div>
+
+          <div id="addToCartBtn">
+            <img src="./images/icon-cart.svg"> Add to Cart
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+      Coded by <a href="#">Dhananjaya</a>.
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+      <button id="closeLightbox"><img src="./images/icon-close.svg" alt="close lightbox" width="200%" color="red"></button>
+
+      <img src="./images/image-product-1.jpg" alt="sneaker image" id="lightboxImage" >
+
+      <button id="lightboxPrev"><img src="./images/icon-previous.svg" alt="previous image" width="30%" height="30%"></button>
+
+      <button id="lightboxNext"><img src="./images/icon-next.svg" alt="next image" width="30%" height="30%"></button>
+
+      <div id="shoeSelection">
+        <button id="lightboxThumbnail1" class="thumbnailBtn"><img src="./images/image-product-1-thumbnail.jpg"  class="lightboxThumbnails"></button>
+        <button id="lightboxThumbnail2" class="thumbnailBtn"><img src="./images/image-product-2-thumbnail.jpg"  class="lightboxThumbnails"></button>
+        <button id="lightboxThumbnail3" class="thumbnailBtn"><img src="./images/image-product-3-thumbnail.jpg"  class="lightboxThumbnails"></button>
+        <button id="lightboxThumbnail4" class="thumbnailBtn"><img src="./images/image-product-4-thumbnail.jpg"  class="lightboxThumbnails"></button>
+      </div>
+    </div>
+
+    <div id="mobileLightbox">
+      <div id="mobileLightboxMenu">
+        <button id="mobileLightboxClose"><img src="./images/icon-close.svg" alt="close lightbox" width="200%" color="red"></button>
+      </div>
+      <div id="mobilesettingButtons">
+          <div id="collection" class="menuButtons">Collection</div>
+          <div id="men" class="menuButtons">Men</div>
+          <div id="women" class="menuButtons">Women</div>
+          <div id="about" class="menuButtons">About</div>
+          <div id="contact" class="menuButtons">Contact</div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
